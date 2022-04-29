@@ -13,17 +13,30 @@ import ReactDom from 'react-dom';
 
 
 
-const Person = () => <h2> john doe </h2>;
-const Message = () => {
-    return <p> this is a message </p>
-}
-function Greeting() {
+// const Person = () => <h2> john doe </h2>;
+// const Message = () => {
+//     return <p> this is a message </p>
+// }
+// function Greeting() {
+//     return (
+//         <>
+//             <Person />
+//             <Message />
+//         </>
+//     )
+// }
+
+
+function Booklist() {
     return (
-        <>
-            <Person />
-            <Message />
-        </>
-    )
+        <section>
+            <Book />
+        </section>
+    );
 }
 
-ReactDom.render(<Greeting />, document.getElementById('root'));
+const Book = () => {
+    return <article>this is a book</article>;
+}
+
+ReactDom.render(<Booklist />, document.getElementById('root'));
