@@ -55,6 +55,7 @@ const Book = (props) => {
             {/* <p>{let x = 6 }</p> */}
             <p>{props.job}</p>
             <p>{props.title}</p>
+            <p>{props.number}</p>
         </article >
     );
 }
