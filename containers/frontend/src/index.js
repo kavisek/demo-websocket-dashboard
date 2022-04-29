@@ -44,16 +44,11 @@ const books = [
     },
 ];
 
-const names = ['John', 'peter', 'susan'];
-const newNames = names.map((name) => {
-    return <h1>{name}</h1>});
-console.log(newNames);
-
 
 function Booklist() {
     return (
         <section className='booklist'>
-            {newNames}
+            {books.map((book) => { return 'hello'; })}
         </section>
     );
 }
