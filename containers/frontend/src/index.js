@@ -48,8 +48,8 @@ const books = [
 function Booklist() {
     return (
         <section className='booklist'>
-            {books.map((book) => {
-                return <Book book={book}></Book>
+            {books.map((book, index) => {
+                return <Book key={index} book={book}></Book>
             })}
         </section>
     );
