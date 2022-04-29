@@ -49,13 +49,7 @@ function Booklist() {
     return (
         <section className='booklist'>
             {books.map((book) => {
-                const { img, title, author } = book;
-                return (
-                    <div>
-                        <h3>{title}</h3>
-                        <h6>{author}</h6>
-                    </div>
-                )
+                return <Book book={book}></Book>
             })}
         </section>
     );
@@ -63,13 +57,14 @@ function Booklist() {
 
 
 const Book = (props) => {
-    const { img, title, author } = props;
     console.log(props)
+    const { img, title, author } = props.book;
+    
     return (
         <article>
-            < img src={props.img} />
-            <h1>{props.title}</h1>
-            <h4>{props.author.toUpperCase()}</h4>
+            < img src={img} />
+            <h1>{title}</h1>
+            <h4>{author.toUpperCase()}</h4>
         </article >
     );
 }
