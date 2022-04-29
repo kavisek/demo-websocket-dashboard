@@ -12,17 +12,16 @@ import ReactDom from 'react-dom';
 // }
 
 
+
+const Person = () => <h2> john doe </h2>;
+const Message = () => {
+    return <p> this is a message </p>
+}
 function Greeting() {
     return (
         <>
-            <div>
-                <h3>hello people</h3>
-                <ul>
-                    <li>
-                        <a href='#'>hello world</a>
-                    </li>
-                    </ul>
-            </div>
+            <Person />
+            <Message />
         </>
     )
 }
