@@ -51,7 +51,7 @@ function Booklist() {
     return (
         <section className='booklist'>
             {books.map((book, index) => {
-                return <Book key={book.id} book={book}></Book>
+                return <Book key={book.id}{...book}></Book>
             })}
         </section>
     );
@@ -60,7 +60,7 @@ function Booklist() {
 
 const Book = (props) => {
     console.log(props)
-    const { img, title, author } = props.book;
+    const { img, title, author } = props;
     
     return (
         <article>
