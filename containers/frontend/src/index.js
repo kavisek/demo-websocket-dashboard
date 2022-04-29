@@ -48,7 +48,15 @@ const books = [
 function Booklist() {
     return (
         <section className='booklist'>
-            {books.map((book) => { return 'hello'; })}
+            {books.map((book) => {
+                const { img, title, author } = book;
+                return (
+                    <div>
+                        <h3>{title}</h3>
+                        <h6>{author}</h6>
+                    </div>
+                )
+            })}
         </section>
     );
 }
