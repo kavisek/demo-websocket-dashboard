@@ -37,5 +37,8 @@ body {
 .book h4 {
     color: #f17d98;
     font-size: 0.75rem;
-    
+
+}
+.book p {
+    margin-top: 0.5rem;
 }
