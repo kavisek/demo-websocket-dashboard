@@ -44,7 +44,10 @@ const books = [
     },
 ];
 
-const names  =['John', 'peter', 'susan']
+const names = ['John', 'peter', 'susan'];
+const newName = names.map((name) => { console.log(name) });
+console.log(newName);
+
 
 function Booklist() {
     return (
