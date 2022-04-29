@@ -27,9 +27,14 @@ import ReactDom from 'react-dom';
 // }
 
 
+// CSV
+import './index.css'
+
 function Booklist() {
     return (
-        <section>
+        <section className='booklist'>
+            <Book />
+            <Book />
             <Book />
             <Book />
             <Book />
