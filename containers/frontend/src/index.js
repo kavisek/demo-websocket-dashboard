@@ -45,14 +45,15 @@ const books = [
 ];
 
 const names = ['John', 'peter', 'susan'];
-const newName = names.map((name) => { console.log(name) });
-console.log(newName);
+const newNames = names.map((name) => {
+    return <h1>{name}</h1>});
+console.log(newNames);
 
 
 function Booklist() {
     return (
         <section className='booklist'>
-            {names}
+            {newNames}
         </section>
     );
 }
