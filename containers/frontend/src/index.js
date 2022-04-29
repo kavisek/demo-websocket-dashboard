@@ -14,7 +14,7 @@ import ReactDom from 'react-dom';
 
 function Greeting() {
     return (
-        <React.Fragment>
+        <>
             <div>
                 <h3>hello people</h3>
                 <ul>
@@ -23,7 +23,7 @@ function Greeting() {
                     </li>
                     </ul>
             </div>
-        </React.Fragment>
+        </>
     )
 }
 
